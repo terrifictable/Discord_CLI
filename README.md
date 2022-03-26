@@ -1,4 +1,4 @@
-<h1>Discord CLI</h1>
+<h1 align="center">Discord CLI</h1>
 <h3>A command line interface for discord<br>
 (i will mby write the cli in python and c/c++, just for fun)<br>
 Idea:
@@ -8,7 +8,7 @@ A discord bot is on server X and sends chat messages to the webserver (which act
 <a href="https://github.com/TerrificTable/Discord-CLI/tree/master/discord_bot">Discord Bot</a> - 
 <a href="https://github.com/TerrificTable/Discord-CLI/tree/master/webserver">Webserver</a>
 
-<img src="https://github.com/TerrificTable/Discord_CLI/blob/main/Discord_CLI_Idea.png"></h3>
+<img src="https://github.com/TerrificTable/Discord_CLI/blob/main/Discord_CLI_Idea.png">
 
 <div class="links" align="center">
     <h3>
@@ -23,4 +23,4 @@ A discord bot is on server X and sends chat messages to the webserver (which act
 </div>
 
 <br><br>
-<h2>Inspired by... some gihub repo i cant find anymore</h2>
+<h2>Inspired by... some gihub repo i cant find anymore
