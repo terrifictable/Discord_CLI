@@ -1,8 +1,5 @@
 <h1 align="center">Discord CLI</h1>
-<h3>A command line interface for discord<br>
-(i will mby write the cli in python and c/c++, just for fun)<br>
-Idea:
-A discord bot is on server X and sends chat messages to the webserver (which acts like an api) the CLI client will request the webserver for chat messages (if there is a better way to do this i will change that). The CLI client sends chat messages by sending a post request to discords official api<br><br>
+<h3>A command line interface for discord<br><br>
 
 <a href="https://github.com/TerrificTable/Discord-CLI/tree/master/cli_client">CLI Client</a> - 
 <a href="https://github.com/TerrificTable/Discord-CLI/tree/master/discord_bot">Discord Bot</a> - 
@@ -23,4 +20,7 @@ A discord bot is on server X and sends chat messages to the webserver (which act
 </div>
 
 <br><br>
-<h2>Inspired by... some gihub repo i cant find anymore
+<h3>(i will mby write the cli in python and c/c++, just for fun)<br>
+Idea:
+A discord bot is on server X and sends chat messages to the webserver (which acts like an api) the CLI client will request the webserver for chat messages (if there is a better way to do this i will change that). The CLI client sends chat messages by sending a post request to discords official api<br><br>
+<br>Inspired by... some gihub repo i cant find anymore
