@@ -1,4 +1,10 @@
 ================================
+        V1.0.1 - Dev Update
+    - Added commons/modules.py
+        - some common functions
+================================
+
+================================
             V1.0
     - Initial files and stuff
 ================================
