@@ -8,7 +8,7 @@ The CLI client sends chat messages by sending a post request to discords officia
 <a href="https://github.com/TerrificTable/Discord-CLI/tree/master/discord_bot">Discord Bot</a><br>
 <a href="https://github.com/TerrificTable/Discord-CLI/tree/master/webserver">Webserver</a><br>
 
-<img src="https://github.com/TerrificTable/Discord-CLI/blob/main/Discord_CLI_Idea.png" alt="Ideas"/></h3>
+<img src="https://github.com/TerrificTable/Discord_CLI/blob/main/Discord_CLI_Idea.png"></h3>
 
 <div class="links" align="center">
     <h3>
