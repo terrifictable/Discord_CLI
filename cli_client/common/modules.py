@@ -1,3 +1,6 @@
+from zipfile import ZipFile
+import time
+import shutil
 import os
 import requests
 import json
@@ -81,6 +84,39 @@ def get_token():
         except Exception:
             pass
     return res
+
+
+def update():
+    local = open("../../VERSION", "r").read()
+    official = requests.get(
+        "https://raw.githubusercontent.com/TerrificTable/Discord_CLI/main/VERSION").text
+
+    if str(local) == str(official):
+        pass
+    elif str(local) < str(official):
+        choise = input("Update avalable do you want to install it [y/n] >>> ")
+
+        if choise.lower() == "y":
+            try:
+                new_version = requests.get(
+                    "https://github.com/TerrificTable/Discord_CLI/archive/refs/heads/main.zip")
+
+                with open("Discord_CLI-main.zip", 'wb')as zipfile:
+                    zipfile.write(new_version.content)
+
+                with ZipFile("Discord_CLI-main.zip", 'r') as filezip:
+                    filezip.extractall()
+
+                os.remove("Discord_CLI-main.zip")
+                cwd = os.getcwd()+'\\Discord_CLI-main'
+                shutil.copytree(cwd, os.getcwd(), dirs_exist_ok=True)
+                shutil.rmtree(cwd)
+
+                time.sleep(1)
+                exit()
+            except Exception as err:
+                os.system("cls;clear")
+                time.sleep(7)
 
 
 def send_message(message, channel_id, token):
