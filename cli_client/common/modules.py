@@ -7,6 +7,25 @@ import json
 import re
 
 
+# ========== EXCEPTIONS =================
+class ServerException(Exception):
+    def __init__(self, message="An error occurred while getting server information"):
+        self.message = message
+        super().__init__(self.message)
+
+    def __str__(self):
+        return f"{self.message}"
+
+
+class ChannelException(Exception):
+    def __init__(self, message="An error occurred while getting channel information"):
+        self.message = message
+        super().__init__(self.message)
+
+    def __str__(self):
+        return f"{self.message}"
+
+
 class MessageException(Exception):
     def __init__(self, message="An error occurred while sending message to discord channel"):
         self.message = message
@@ -14,12 +33,17 @@ class MessageException(Exception):
 
     def __str__(self):
         return f'{self.message}'
+# =====================================
+
+# ========== Common Functions =================
 
 
 class Commons(object):
     def __init__(self): pass
     def clear(self): os.system("cls" if os.name == "nt" else "clear")
     def jsonify(self, data): return json.dumps(data)
+
+# ========== Logger =================
 
 
 class Logger(object):
@@ -50,6 +74,7 @@ class Logger(object):
             with open("./log.txt", "a") as f:
                 f.write("[ERROR]" + msg)
         print("\033[91m" + msg, end="\033[0m")
+# ================================================
 
 
 def getheaders(token=None, content_type="application/json"):
