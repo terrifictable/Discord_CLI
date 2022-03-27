@@ -1,0 +1,107 @@
+{
+  "main": {
+    "id": "41c24ca37cb57068",
+    "type": "split",
+    "children": [
+      {
+        "id": "a74f55b93beff323",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Discord_Servers.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "01a327c8217b6e86",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Discord_Servers.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "625a4afb3e204864",
+    "type": "split",
+    "children": [
+      {
+        "id": "d21dd18d7ec6ea8f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "be90eaf16c4de810",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "25721cb3ff82bee9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5aee17a66a4e1b33",
+    "type": "split",
+    "children": [
+      {
+        "id": "e02c8e3f26b949b4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11e477803dae34c1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Discord_Servers.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "a74f55b93beff323",
+  "lastOpenFiles": [
+    "Discord_Servers.md",
+    "Discord_Channels.md",
+    "DISCORD_API.md",
+    "Untitled.md"
+  ]
+}

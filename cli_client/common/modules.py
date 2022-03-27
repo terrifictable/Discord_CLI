@@ -119,6 +119,18 @@ def update():
                 time.sleep(7)
 
 
+def get_server_list(token, headers=None):
+    """Get all servers `token` is on"""
+    headers = getheaders(token=token) if headers == None else headers
+    return requests.get("https://discordapp.com/api/v6/users/@me/guilds", headers=headers).content.strip().decode("ISO-8859-1")
+
+
+def get_channel_list(server_id, token, headers=None):
+    """Get all channels from `server_id` if ``token` is on the server"""
+    headers = getheaders(token=token) if headers == None else headers
+    return requests.get("https://discord.com/api/v9/guilds/%s/channels" % str(server_id), headers=headers).content.strip().decode("ISO-8859-1")
+
+
 def send_message(message, channel_id, token):
     """Send `message` to/in `channel_id` using `token`"""
     requests.post(f'https://discord.com/api/v9/channels/'+channel_id+'/messages',
@@ -126,6 +138,6 @@ def send_message(message, channel_id, token):
                   data={"content": message})
 
 
-def recv_server(channel_id):  # TODO
+def get_server(channel_id):  # TODO
     """Receve messages from server"""
     pass
