@@ -43,8 +43,6 @@ class Commons(object):
     def clear(self): os.system("cls" if os.name == "nt" else "clear")
     def jsonify(self, data): return json.dumps(data)
 
-# ========== Logger =================
-
 
 class Logger(object):
     def __init__(self, write_file=True):
@@ -112,6 +110,7 @@ def get_token():
 
 
 def update():
+    """Update Discord CLI dependend on `VERSION` file"""
     local = open("../../VERSION", "r").read()
     official = requests.get(
         "https://raw.githubusercontent.com/TerrificTable/Discord_CLI/main/VERSION").text
@@ -164,5 +163,5 @@ def send_message(message, channel_id, token):
 
 
 def get_server(channel_id):  # TODO
-    """Receve messages from server"""
+    """Get messages from server"""
     pass
