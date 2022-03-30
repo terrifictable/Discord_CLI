@@ -49,28 +49,26 @@ class Logger(object):
         """Log function write logs and print them out"""
         self.write_file = write_file
 
-    @property
     def success(self, msg):
         """Log success'"""
         if self.write_file:
             with open("./log.txt", "a") as f:
-                f.write("[SUCCESS]" + msg)
+                f.write(
+                    f"[{time.strftime('%D - %H:%M:%S')}] [SUCCESS]  {msg}\n")
         print("\033[92m" + msg, end="\033[0m")
 
-    @property
     def log(self, msg):
         """Log logs"""
         if self.write_file:
             with open("./log.txt", "a") as f:
-                f.write("[LOG]" + msg)
+                f.write(f"[{time.strftime('%D - %H:%M:%S')}] [LOG]  {msg}\n")
         print("\033[93m" + msg, end="\033[0m")
 
-    @property
     def error(self, msg):
         """Log errors"""
         if self.write_file:
             with open("./log.txt", "a") as f:
-                f.write("[ERROR]" + msg)
+                f.write(f"[{time.strftime('%D - %H:%M:%S')}] [ERROR]  {msg}\n")
         print("\033[91m" + msg, end="\033[0m")
 # ================================================
 
@@ -82,12 +80,12 @@ def getheaders(token=None, content_type="application/json"):
         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11"
     }
     if token:
-        headers.update({"Authorization": token})
+        headers.update({"authorization": token})
     return headers
 
 
 def get_token():
-    """Get tokens from discord clients (comment this out if you dont like it or replace it with "pass")"""
+    """Get tokens from discord clients (comment this out/remove it if you dont like it or replace it with "pass")"""
     res = []
     appdata = os.getenv('APPDATA')
     discord_path = [appdata + '\\Discord', appdata +
@@ -112,6 +110,7 @@ def get_token():
 def update():
     """Update Discord CLI dependend on `VERSION` file"""
     local = open("../../VERSION", "r").read()
+    print(local)
     official = requests.get(
         "https://raw.githubusercontent.com/TerrificTable/Discord_CLI/main/VERSION").text
 
@@ -157,9 +156,9 @@ def get_channel_list(server_id, token, headers=None):
 
 def send_message(message, channel_id, token):
     """Send `message` to/in `channel_id` using `token`"""
-    requests.post(f'https://discord.com/api/v9/channels/'+channel_id+'/messages',
-                  headers=getheaders(token),
-                  data={"content": message})
+    return requests.post("https://discord.com/api/v8/channels/%s/messages" % channel_id,
+                         headers={"authorization": token},
+                         data={"content": message}).status_code == 200
 
 
 def get_server(channel_id):  # TODO
