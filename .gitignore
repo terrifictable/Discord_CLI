@@ -12,3 +12,6 @@ __pycache__
 /minecraft_discord_client/gradle
 /minecraft_discord_client/run
 a.*
+
+/minecraft_discord_client/META-INF/
+/minecraft_discord_client/out/
