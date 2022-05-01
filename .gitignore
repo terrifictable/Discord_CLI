@@ -3,3 +3,6 @@ a.json
 test.json
 test.py
 __pycache__
+/webserver/node_modules/
+/discord_bot/token
+/webserver/data/

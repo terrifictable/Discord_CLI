@@ -11,7 +11,7 @@ import requests
 import time
 
 client = commands.Bot(command_prefix='>')
-token = "OTM5MjcxMDMzNDE5MTAwMjAx.Yf2aUQ.fhXEGUK7XQDXYdyYHKU3LE8zNuQ"
+token = open("./token", "r").readline()
 
 
 @client.event

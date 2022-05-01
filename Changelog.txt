@@ -1,4 +1,15 @@
 ================================
+        V1.1 - kinda works
+    - Added:
+        - Webserver (js)
+        - Discord Bot (py)
+    - Fixes:
+        - Removed my bot token
+        - removed data folder
+        - removed node_modules folder
+
+================================
+================================
         V1.0.1 - Dev Update
     - Added commons/modules.py
         - some common functions
