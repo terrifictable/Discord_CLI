@@ -7,12 +7,16 @@ app.use(bodyParser.json());
 let workingDir = "./data/";
 
 app.listen(5000, () => {
-  console.log("APP running (http://localhost:5000)"); // <- change
+  console.log("APP running (http://127.0.0.1:5000)"); // <- change
 });
 
 app.get("/:server", (req, res) => {
   let server = req.params.server.replace(":", "").replace("_", "/");
   fs.readFile(workingDir + server + ".txt", "utf-8", (err, content) => {
+    if (err) {
+      res.send("invalid");
+    }
+
     if (content != undefined) {
       res.send(content); // .replace("\n", "<br>"));
     }
