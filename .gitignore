@@ -6,3 +6,8 @@ __pycache__
 /webserver/node_modules/
 /discord_bot/token
 /webserver/data/
+
+/minecraft_discord_client/.gradle
+/minecraft_discord_client/.idea
+/minecraft_discord_client/gradle
+/minecraft_discord_client/run

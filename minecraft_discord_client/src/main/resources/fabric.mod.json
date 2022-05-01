@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "mdc",
+  "version": "${version}",
+
+  "name": "Minecraft Discord Client",
+  "description": "Minecraft DiscordCLI Server thingy integration",
+  "authors": [
+    "TerrificTable55"
+  ],
+  "contact": {
+    "homepage": "https://github.com/TerrificTable/Discord_CLI",
+    "sources": "https://github.com/TerrificTable/Discord_CLI"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/mdc/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.terrific.mod.Main"
+    ]
+  },
+  "mixins": [
+    "mdc.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
