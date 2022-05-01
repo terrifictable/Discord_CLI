@@ -1,21 +1,21 @@
 <h1 align="center">Discord CLI</h1>
 <h3>A command line interface for discord<br><br>
 
-<a href="https://github.com/TerrificTable/Discord-CLI/tree/master/cli_client">CLI Client</a> - 
-<a href="https://github.com/TerrificTable/Discord-CLI/tree/master/discord_bot">Discord Bot</a> - 
-<a href="https://github.com/TerrificTable/Discord-CLI/tree/master/webserver">Webserver</a>
+<a href="https://github.com/TerrificTable/Discord_CLI/tree/master/cli_client">CLI Client</a> - 
+<a href="https://github.com/TerrificTable/Discord_CLI/tree/master/discord_bot">Discord Bot</a> - 
+<a href="https://github.com/TerrificTable/Discord_CLI/tree/master/webserver">Webserver</a>
 
 <img src="https://github.com/TerrificTable/Discord_CLI/blob/main/Discord_CLI_Idea.png">
 
 <div class="links" align="center">
     <h3>
-        <a href="https://github.com/TerrificTable/Discord-CLI/blob/main/Changelog.txt">Changelog</a>
+        <a href="https://github.com/TerrificTable/Discord_CLI/blob/main/Changelog.txt">Changelog</a>
         ·
-        <a href="https://github.com/TerrificTable/Discord-CLI/blob/main/ToDo.md">ToDO</a>
+        <a href="https://github.com/TerrificTable/Discord_CLI/blob/main/ToDo.md">ToDO</a>
         ·
-        <a href="https://github.com/TerrificTable/Discord-CLI/issues">Report Bug</a>
+        <a href="https://github.com/TerrificTable/Discord_CLI/issues">Report Bug</a>
         ·
-        <a href="https://github.com/TerrificTable/Discord-CLI/issues">Request Feature</a>
+        <a href="https://github.com/TerrificTable/Discord_CLI/issues">Request Feature</a>
     </h3>
 </div>
 
