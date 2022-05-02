@@ -31,8 +31,7 @@ class HTTPUtils {
                     }
                 }
             } catch (e: Exception) {
-                println(e)
-                println(result.toString())
+                print(e.message)
             }
 
             return result.toString()

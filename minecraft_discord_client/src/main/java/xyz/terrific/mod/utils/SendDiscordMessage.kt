@@ -8,8 +8,7 @@ class SendDiscordMessage {
         fun send(message: String) {
             if (Main.CHANNELID != "-1") {
                 if (Main.TOKEN != "") {
-                    val res: String = HTTPUtils.post("https://discord.com/api/v9/channels/${Main.CHANNELID}/messages", "content=${message}", token=Main.TOKEN)
-                    println(res) // DEBUG
+                    HTTPUtils.post("https://discord.com/api/v9/channels/${Main.CHANNELID}/messages", "content=${message}", token=Main.TOKEN)
                 } else {
                     Main.addChatMessage("Set Token before sending discord messages")
                 }
@@ -21,7 +20,6 @@ class SendDiscordMessage {
         // fun send(channel_id: String, message: String) {
         //     if (Main.TOKEN != "") {
         //         val res: String = HTTPUtils.post("https://discord.com/api/v9/channels/${channel_id}/messages", "content=${message}", token=Main.TOKEN)
-        //         println(res) // DEBUG
         //     } else {
         //         Main.addChatMessage("Set Token before sending discord messages")
         //     }
