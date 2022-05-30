@@ -7,6 +7,10 @@ import xyz.terrific.utils.Logger;
 
 import java.util.List;
 
+/**
+ * @author TerrificTable55
+ * @version 1.0
+ */
 public class Main {
 
     public static List<String> old_messages = null;
